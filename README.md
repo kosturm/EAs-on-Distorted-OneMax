@@ -1,2 +1,2 @@
 # EAs-on-Distorted-OneMax
-Code for Self-Adjusting Evolutionary Algorithms Are Slow on Multimodal Landscapes
+This Repository provides the code, data and plots for the paper ``Self-Adjusting Evolutionary Algorithms Are Slow on Multimodal Landscapes'' by Johannes Lengeler and Konstantin Sturm.
