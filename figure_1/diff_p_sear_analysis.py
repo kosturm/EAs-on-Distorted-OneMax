@@ -51,3 +51,4 @@ plt.tight_layout()
 
 # Save the plot to a file
 plt.savefig(f'{folder_name}/plot_diff_p.png')
+plt.savefig(f'{folder_name}/plot_diff_p.eps')
