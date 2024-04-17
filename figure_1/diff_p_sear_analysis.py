@@ -49,6 +49,8 @@ ax.legend(new_handles, new_labels)
 # Use tight layout to adjust plot elements
 plt.tight_layout()
 
+plt.subplots_adjust(top=0.99)  # You can change 0.9 to suit your needs
+
 # Save the plot to a file
 plt.savefig(f'{folder_name}/plot_diff_p.png')
 plt.savefig(f'{folder_name}/plot_diff_p.eps')

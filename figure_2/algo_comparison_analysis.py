@@ -10,7 +10,7 @@ plt.rcParams['font.size'] = '14'
 folder_name = "output_files"
 
 # Create a figure with a specific size
-fig, ax = plt.subplots(figsize=(11, 6))
+fig, ax = plt.subplots(figsize=(11, 6.34))
 
 def plot_algo(algo, ax, folder_name):
     labels = {"SEAR": 'SA-$(1, \lambda)$-EA', "OLEA": '$(1, \lambda)$-EA', "OPEA": '$(1 + \lambda)$-EA'}
@@ -36,13 +36,15 @@ ax.axhline(y=1_000_000, linestyle='--', label='Cutoff', linewidth=3)
 # Set labels, title, and grid
 ax.set_xlabel('n')
 ax.set_ylabel('Median Number of Evaluations')
+#ax.set_yticks([0, 200000, 400000, 600000, 800000, 1000000])
+#ax.set_yticklabels(['$0$', '$2 \cdot 10^6$', '$4 \cdot 10^6$', '$6 \cdot 10^6$', '$8 \cdot 10^6$', '$10^7$'])
 ax.grid(True)
 
 # Set legend
 handles, labels = ax.get_legend_handles_labels()
 print(labels)
 # Order from smallest to largest dimension (or any custom order)
-desired_order = [4,0,1,2,3]
+desired_order = [4,0,2,3,1]
 new_labels = [labels[i] for i in desired_order]
 new_handles = [handles[i] for i in desired_order] 
 
