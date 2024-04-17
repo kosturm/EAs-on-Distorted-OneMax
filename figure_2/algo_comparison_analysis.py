@@ -53,5 +53,5 @@ ax.legend(new_handles, new_labels)
 
 # Adjust layout and save the plot
 plt.tight_layout()
-plt.savefig(f'{folder_name}/plot.png')
-plt.savefig(f'{folder_name}/plot.eps')
+plt.savefig(f'{folder_name}/plot_diff_algo.png')
+plt.savefig(f'{folder_name}/plot_diff_algo.eps')
